@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fun Timer</title>
+    <link rel="stylesheet" href="/css/index.css">
+</head>
+<body id="body">
+    <header>
+        <!-- header-menu-icon -->
+        <div class="menu-icon">
+            <div class="icon" id="menu-icon">
+                <div class="line"></div>
+                <div class="line"></div>
+                <div class="line"></div>
+            </div>
+            <div class="title-container">
+                <span class="title">
+                    <h1>FunTimer</h1>
+                </span>
+            </div>
+        </div>
+        <!-- header menu -->
+        <div class="menu-elements">
+            <nav class="menu">
+                <ul class="menu-list" id="menu">
+                    <li class="list-item"><a href="#" class="link-item"> inicio</a></li>
+                    <li class="list-item"><a href="#" class="link-item"> Alarma</a></li>
+                    <li class="list-item"><a href="#" class="link-item"> Temporizador</a></li>
+                    <li class="list-item"><a href="#" class="link-item">cronometro</a></li>
+                    <li class="list-item"><a href="#" class="link-item"> Reloj</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+    <section class="main">
+        <!-- start modal -->
+           
+        
+            <div class="modal" id="modal-alarm">
+                    <div class="modal-title">
+                        <span>Alarma</span>
+                        <div class="ekis" id="ekis">
+                            <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/c/cc/Cross_red_circle.svg/768px-Cross_red_circle.svg.png" alt="">
+                        </div>
+                    </div>
+                  <section>
+                    <div class="alarm-img">
+                        <img src="https://cdn-icons-png.flaticon.com/512/1298/1298465.png" alt="">
+                    </div>
+                    <span class="nombre-alarma">Nombre de alarma</span>
+                    <div class="alarma-activa">
+                        21:30
+                    </div>
+                  </section>
+                  <menu class="modal-btn">
+                    <button id="close-modal">Confirmar</button>
+                  </menu>
+            </div>
+          
+
+        <!-- end modal -->
+        <!-- Timer controls -->
+        <div class="timer-controls">
+            <div class="sonido" id="sonido"></div>
+            <form action="#" class="alarmform">
+                <label for="seth">Horas:</label>
+                <input type="number" name="seth" id="seth" min="0" max="12" value="0">
+                <label for="setm">Minutos</label>
+                <input type="number" name="setm" id="setm" min="0" max="59" value="0">
+                <label for="setm">Segundos:</label>
+                <input type="number" name="sets" id="sets" min="0" max="59" value="0">
+                
+                <div class="btn-start">
+                    <input type="button" value="Programar Alarma" onclick="alarma.addAlarm();">
+                </div>
+                
+            </form>
+            <div class="runner">
+                <div class="runner-img">
+                    <h2 class="alarm-list">Alarmas</h2>
+                    <hr>
+                    <div class="alarmas" id="lista-alarmas">
+
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Timer container(right) -->
+        <div class="timer-container">
+            <div class="timer-circle">
+                <div class="timer">
+                    <!-- <p class="hours" id="horas">
+                        
+                    </p>
+                    <p class="points">:</p>
+                    <p class="minutes" id="minutos">
+                        
+                    </p>
+                    <p class="points">:</p>
+                    <p class="seconds" id="segundos">
+                        
+                    </p>
+                    <p class="ampm" id="ampm">
+                        
+                    </p> -->
+                    <p class="hours" id="hora"></p>
+                </div>
+            </div>
+            <div class="date">
+                <p class="fecha" id="fecha"><p>
+            </div>
+        </div>
+        
+    </section>
+    <!-- Footer pages -->
+    <footer>
+        <div class="footer">
+            <p>Todos los derechos reservados, FunTimer &copy;</p>
+            <ul class="footer-links">
+                <li><a href="#">Contacto</a></li>
+                <li><a href="#">Acerca de FunTimer</a></li>
+            </ul>
+        </div>
+        
+    </footer>
+
+<!-- Linkeamos el timer.js -->
+<script src="/js/timer.js"></script>
+</body>
+</html>

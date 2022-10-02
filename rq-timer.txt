@@ -1,0 +1,9 @@
+- Al cronometro lo rodea una capa circularm que es una barra de progreso de verde a rojo por ejemplo.
+
+- El circulo inica de un color solido, pero al programarlo cambia de color o el usuario podría escoger un par de colores.
+
+- (Cuando se un contador o dronometro)Poner el boton a la derecha y con el un personaje que antes de iniciar la larma esté durmiendo y despues empiece a correr o a saltar, cuando la alarma haya culminado que tenga una animación de descansar(Agitado).
+
+- Cuando sea alarma mostrar a alguien durmiendo y que despierte al finazilar la alarma.
+
+- El formato de hora se puede cambiar, y también el color de texto del reloj
