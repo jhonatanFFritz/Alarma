@@ -39,6 +39,11 @@ body{
     display: flex;
     flex-direction: column;
 }
+input[type=number]::-webkit-inner-spin-button, 
+input[type=number]::-webkit-outer-spin-button { 
+  -webkit-appearance: none; 
+  margin: 0; 
+}
 header, body, footer{
     width: 100%;
 }
@@ -183,6 +188,7 @@ header{
     align-items: center;
 }
 .btn-start{
+    
     display: flex;
     align-items: center;
     justify-content: center;
@@ -272,6 +278,21 @@ header{
    text-align: center;
 }
 
+.alarmform{
+    
+}
+.numeros>label{
+    font-size: 1.2rem;
+    font-weight: 700;
+    color: #353232;
+}
+.numeros>input{
+    padding: 5px 8px;
+    border: none; 
+    border-radius: 5px;  
+    max-width: 50px;
+    box-shadow: 5px 5px 3px #888181;
+}
 .alarm-list{
     font-size: 2rem;
     color: rgba(36, 32, 32, 0.8);
@@ -279,17 +300,44 @@ header{
 hr{
     width: 100%;
 }
-
+.nala{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 20px 0;
+}
+.nala>input{
+    height: 35px;
+    padding: 0 10px;
+    border: none;
+    border-radius: 5px;
+    font-weight: 700;
+    box-shadow: 5px 5px 3px #888181;
+}
+.nala>h2{
+    font-size: 2rem;
+    color: rgba(36, 32, 32, 0.8);
+}
+.alarmas>li{
+    font-size: 1.5rem;
+    color: #353232;
+}
+.musica{
+    
+}
 /* modal css start */
 
 .modal{
+    z-index: 2;
     position: absolute;
     display: none;
     flex-direction: column;
     justify-content: space-around;
     align-items: center; 
-    width: 400px;
-    height: 400px;
+    width: 500px;
+    height: 500px;
 
     backdrop-filter: blur(2px);
 
@@ -335,14 +383,14 @@ hr{
     align-items: center;
 
     font-size: 1.5rem;
-
+    font-weight: 900;
     padding: 10px 0;
 }
 .alarma-activa{
     display: flex;
     justify-content: center;
     align-items: center;
-
+    font-weight: 900;
     font-size: 2rem;
 }
 .alarm-img{

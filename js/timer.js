@@ -103,7 +103,6 @@ class Alarma{
         getElement("seth").value = "";
         getElement("setm").value = "";
         getElement("sets").value = "";
-
         getElement("seth").focus();
      }
 
@@ -115,14 +114,17 @@ class Alarma{
 
         alarms.push(date);
 
+
+
         this.clearForm();
 
         this.displayAlarm();
      }
 
      renderAlarm = (alarm, alarmList) =>{
+        
         const li = createElement("li");
-        li.innerHTML = `Alarma Seteada: ${this.toLocaleTimeString(alarm)}`;
+        li.innerHTML = `Alarma para: ${this.toLocaleTimeString(alarm)}`;
         alarmList.appendChild(li);
         
      }
@@ -142,9 +144,13 @@ class Alarma{
             const alarm = this.toLocaleTimeString(alarms[i]);
             if(alarm === time){
                 alarms.splice(i, 1);
+                let uno = true;
                 this.displayAlarm();
                 
+                let music = getElement("music");
+                music.play();
                 getElement("modal-alarm").style.display = "flex";
+                getElement("modal-hora").innerHTML = alarm;
             }
         }
      }
@@ -220,7 +226,11 @@ window.onload = function(){
 //Codigo apra cerrar el modal de la alarma lanzada
  getElement("ekis").onclick = () => {
     getElement("modal-alarm").style.display = "none";
+    let music = getElement("music");
+    music.pause();
  }
  getElement("close-modal").onclick = () => {
     getElement("modal-alarm").style.display = "none";
+    let music = getElement("music");
+    music.pause();
  }

@@ -39,7 +39,7 @@
     <section class="main">
         <!-- start modal -->
            
-        
+        <audio src="/sounds/ringtones-minion-wake-up.mp3" id="music" loop></audio>
             <div class="modal" id="modal-alarm">
                     <div class="modal-title">
                         <span>Alarma</span>
@@ -51,9 +51,11 @@
                     <div class="alarm-img">
                         <img src="https://cdn-icons-png.flaticon.com/512/1298/1298465.png" alt="">
                     </div>
-                    <span class="nombre-alarma">Nombre de alarma</span>
-                    <div class="alarma-activa">
-                        21:30
+                    <span class="nombre-alarma" id="nombre-alarma">
+                        <!-- mostrar nombre de Alarma -->
+                    </span>
+                    <div class="alarma-activa" id="modal-hora">
+                        <!-- mostrar hora de alarma activada-->
                     </div>
                   </section>
                   <menu class="modal-btn">
@@ -61,22 +63,31 @@
                   </menu>
             </div>
           
-
+        
         <!-- end modal -->
         <!-- Timer controls -->
         <div class="timer-controls">
             <div class="sonido" id="sonido"></div>
             <form action="#" class="alarmform">
-                <label for="seth">Horas:</label>
+                <!-- ingreso de nombre de alarma -->
+                <div class="nala">
+                    <h2>Programar alarma</h2>
+                   
+                </div>
+
+                <div class="numeros">
+                    <label for="seth">Horas:</label>
                 <input type="number" name="seth" id="seth" min="0" max="12" value="0">
-                <label for="setm">Minutos</label>
+                <label for="setm">Minutos:</label>
                 <input type="number" name="setm" id="setm" min="0" max="59" value="0">
                 <label for="setm">Segundos:</label>
-                <input type="number" name="sets" id="sets" min="0" max="59" value="0">
+                <input type="num ber" name="sets" id="sets" min="0" max="59" value="0">
+                </div>
                 
                 <div class="btn-start">
                     <input type="button" value="Programar Alarma" onclick="alarma.addAlarm();">
                 </div>
+                
                 
             </form>
             <div class="runner">
