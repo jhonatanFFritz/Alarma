@@ -226,8 +226,8 @@ header{
     display: flex;
     flex-direction: column;
     align-items: center;
-    justify-content: center;
-    padding-top: 50px;
+    /* justify-content: center;
+    padding-top: 50px; */
 }
 .timer-circle{
     /* set height and width */
@@ -501,6 +501,9 @@ footer>ul>li{
         flex-direction: column;
         align-items: center;
         justify-content: space-between;
+    }
+    .btn-start{
+        padding-top: 20px;
     }
 }
 /* Para pantallas mayores a 780px */
