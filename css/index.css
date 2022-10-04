@@ -285,7 +285,6 @@ header{
 .numeros{
     width: 100%;
     display: flex;
-    align-items: center;
 }
 .numeros__cont{
     width: 100%;
