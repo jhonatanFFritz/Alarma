@@ -219,6 +219,10 @@ window.onload = function(){
     // actualizaHora();
     // setInterval(actualizaHora, 1000);
     Fechas();
+
+    getElement("seth").length = 2;
+    getElement("setm").length = 2;
+    getElement("sets").length = 2;
     
 }
 
