@@ -493,6 +493,7 @@ footer>ul>li{
     .numeros{
         width: 100%;
         display: flex;
+        gap: 10px;
     }
     .numeros__cont{
         width: 100%;
