@@ -489,11 +489,17 @@ footer>ul>li{
     }
 }
 @media (max-width: 480px) {
+    
     .numeros{
+        width: 100%;
+        display: flex;
+    }
+    .numeros__cont{
+        width: 100%;
         display: flex;
         flex-direction: column;
         align-items: center;
-        justify-content: center;
+        justify-content: space-between;
     }
 }
 /* Para pantallas mayores a 780px */
