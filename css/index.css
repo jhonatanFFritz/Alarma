@@ -498,6 +498,7 @@ footer>ul>li{
     }
     .main{
         height: 100vh;
+        padding: 20px;
     }
     .numeros{
         width: 100%;
