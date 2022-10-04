@@ -255,9 +255,10 @@ header{
 }
 .hours, .minutes, .seconds{
     font-weight: 900;
-    font-size: 2.5rem;
+    font-size: 3rem;
+    text-shadow: 4px 6px 2px #353232b7;
 
-    color: rgba(36, 32, 32, 0.8);
+    color: rgba(255, 255, 255, 0.8);
 }
 /* date CSS */
 .date{
