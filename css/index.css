@@ -444,14 +444,13 @@ footer{
     align-items: center;
     justify-content: center;
 
-    /* margin-top: 100%; */
-    bottom: 0;
+    margin-top: auto;
+
     padding: 20px 10px;
     background-color: rgba(218, 218, 218, 0.664);
     backdrop-filter: blur(5px);
 }
 .footer{
-    position: fixed;
     width: 100%;
     display: flex;
     flex-wrap: wrap;
@@ -498,7 +497,7 @@ footer>ul>li{
         top: 0;
     }
     .main{
-        height: 100vh;
+        height: 100%;
         padding-bottom: 40px;
     }
     .numeros{
