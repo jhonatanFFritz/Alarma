@@ -226,8 +226,8 @@ header{
     display: flex;
     flex-direction: column;
     align-items: center;
-    /* justify-content: center;
-    padding-top: 50px; */
+    justify-content: center;
+    padding-top: 60px;
 }
 .timer-circle{
     /* set height and width */
@@ -490,7 +490,14 @@ footer>ul>li{
     }
 }
 @media (max-width: 480px) {
-    
+    /* body{
+        position: fixed;
+    } */
+    header{
+        z-index: 1;
+        position: fixed;
+        top: 0;
+    }
     .numeros{
         width: 100%;
         display: flex;
