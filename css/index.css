@@ -498,7 +498,7 @@ footer>ul>li{
     }
     .main{
         height: 100vh;
-        padding: 20px;
+        padding-bottom: 40px;
     }
     .numeros{
         width: 100%;
@@ -514,6 +514,10 @@ footer>ul>li{
     }
     .btn-start{
         padding-top: 20px;
+    }
+    .nala{
+        margin-top: 0;
+        padding-top: 0;
     }
     
 }
